@@ -2,7 +2,7 @@
 
 Indonesian Territory for Rails
 
-#### Setup
+### Setup
 
 You can use generator:
 
@@ -39,7 +39,7 @@ rails g scaffold Province name
 
 Customize to your needs
 
-#### Seed
+### Seed
 
 Copy and paste from seed file:
 
