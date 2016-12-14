@@ -41,7 +41,7 @@ Customize to your needs
 
 ### Seed
 
-Copy and paste from seed file:
+Copy and paste to seed file:
 
 1. provinces.rb
 2. regencies.rb
