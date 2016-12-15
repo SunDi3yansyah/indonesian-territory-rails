@@ -63,7 +63,7 @@ namespace :db do
 end
 ```
 
-Open terminal, go to the directory of your project
+Open terminal, go to the directory of your project. Then run:
 
 ```
 rake db:seed:provinces
