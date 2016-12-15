@@ -73,3 +73,12 @@ rake db:seed:villages
 ```
 
 Note: Must sequentially
+
+### SQL Import Method
+
+1. Import all sql file from `db/data/sql/*` to database project.
+2. Run update Date Time:
+
+``` rb
+Object.update_all(created_at: DateTime.now, updated_at: DateTime.now)
+```
