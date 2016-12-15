@@ -50,6 +50,21 @@ Copy all file `db/data/*` in your project
 
 Copy file `lib/tasks/custom_seed.rake` in your project
 
+``` rb
+namespace :db do
+  namespace :seed do
+    Dir[File.join(Rails.root, 'db', 'data', '*.rb')].each do |filename|
+      task_name = File.basename(filename, '.rb').intern    
+      task task_name => :environment do
+        load(filename) if File.exist?(filename)
+      end
+    end
+  end
+end
+```
+
+Open terminal, go to the directory of your project
+
 ```
 rake db:seed:provinces
 rake db:seed:regencies
