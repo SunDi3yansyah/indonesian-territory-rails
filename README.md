@@ -41,11 +41,20 @@ Customize to your needs
 
 ### Seed
 
-Copy and paste to seed file:
+Copy all file `db/data/*` in your project
 
 1. provinces.rb
 2. regencies.rb
 3. districts.rb
 4. villages.rb
+
+Copy file `lib/tasks/custom_seed.rake` in your project
+
+```
+rake db:seed:provinces
+rake db:seed:regencies
+rake db:seed:districts
+rake db:seed:villages
+```
 
 Note: Must sequentially
