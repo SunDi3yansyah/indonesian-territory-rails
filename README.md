@@ -82,3 +82,9 @@ Note: Must sequentially
 ``` rb
 Object.update_all(created_at: DateTime.now, updated_at: DateTime.now)
 ```
+
+Example
+
+```
+Province.update_all(created_at: DateTime.now, updated_at: DateTime.now)
+```
