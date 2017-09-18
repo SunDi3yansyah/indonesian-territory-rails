@@ -41,21 +41,22 @@ Customize to your needs
 
 ### Seed
 
-Copy all file `db/data/*` in your project
+Copy all file `db/seed/*` in your project
 
 1. provinces.rb
 2. regencies.rb
 3. districts.rb
 4. villages.rb
 
-Copy file `lib/tasks/custom_seed.rake` in your project
+Copy file `lib/tasks/seed_development.rake` in your project
 
 ``` rb
 namespace :db do
   namespace :seed do
-    Dir[File.join(Rails.root, 'db', 'data', '*.rb')].each do |filename|
-      task_name = File.basename(filename, '.rb').intern    
-      task task_name => :environment do
+    Dir[Rails.root.join('db', 'seed', '*.rb')].each do |filename|
+      task_name = File.basename(filename, '.rb')
+      desc "Seed " + task_name + ", based on the file with the same name in `db/seeds/*.rb`"
+      task task_name.to_sym => :environment do
         load(filename) if File.exist?(filename)
       end
     end
@@ -76,7 +77,7 @@ Note: Must sequentially
 
 ### SQL Import Method
 
-1. Import all sql file from `db/data/sql/*` to database project.
+1. Import all sql file from `db/sql/*` to database project.
 2. Run update Date Time:
 
 ``` rb
