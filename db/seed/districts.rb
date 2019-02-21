@@ -293,7 +293,7 @@ District.create([
 	{ regency_id: 24, name: "ULUGAWO" },
 	{ regency_id: 24, name: "GIDO" },
 	{ regency_id: 24, name: "SOGAEADU" },
-	{ regency_id: 24, name: "MA U" },
+	{ regency_id: 24, name: "MA'U" },
 	{ regency_id: 24, name: "SOMOLO - MOLO" },
 	{ regency_id: 24, name: "HILIDUHO" },
 	{ regency_id: 24, name: "HILI SERANGKAI" },
