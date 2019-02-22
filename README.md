@@ -1,91 +1,80 @@
-## Indonesian Territory
+# Indonesian Territory for Rails
 
 Indonesian Territory for Rails
 
-### Setup
+[![Build Status](https://travis-ci.com/SunDi3yansyah/indonesian-territory-rails-rb.svg)](https://travis-ci.com/SunDi3yansyah/indonesian-territory-rails-rb)
+[![License](https://img.shields.io/github/license/SunDi3yansyah/indonesian-territory-rails-rb.svg)](LICENSE)
+[![Gem Version](https://badge.fury.io/rb/indonesian-territory-rails.svg)](https://badge.fury.io/rb/indonesian-territory-rails)
+[![Download total](https://img.shields.io/gem/dt/indonesian-territory-rails.svg?style=flat)](https://badge.fury.io/rb/indonesian-territory-rails)
+[![GitHub last commit](https://img.shields.io/github/last-commit/SunDi3yansyah/indonesian-territory-rails-rb.svg)](https://github.com/SunDi3yansyah/indonesian-territory-rails-rb/commits/master)
+[![GitHub issues](https://img.shields.io/github/issues/SunDi3yansyah/indonesian-territory-rails-rb.svg)](https://github.com/SunDi3yansyah/indonesian-territory-rails-rb/issues)
 
-You can use generator:
 
-```
-rails g migration
-```
+## Installation
 
-or
+Add this line to your application's Gemfile:
 
-```
-rails g model
-```
-
-or
-
-```
-rails g scaffold
+```ruby
+gem 'indonesian-territory-rails'
 ```
 
-to
+And then execute:
 
-```
-Village district:references name
-District regency:references name
-Regency province:references name
-Province name
+```bash
+$ bundle
 ```
 
-Example:
+Or install it yourself as:
 
-```
-rails g scaffold Province name
-```
-
-Customize to your needs
-
-### Seed
-
-Copy all file `db/seed/*` in your project
-
-1. provinces.rb
-2. regencies.rb
-3. districts.rb
-4. villages.rb
-
-Copy file `lib/tasks/seed_development.rake` in your project
-
-``` rb
-namespace :db do
-  namespace :seed do
-    Dir[Rails.root.join('db', 'seed', '*.rb')].each do |filename|
-      task_name = File.basename(filename, '.rb')
-      desc "Seed " + task_name + ", based on the file with the same name in `db/seed/*.rb`"
-      task task_name.to_sym => :environment do
-        load(filename) if File.exist?(filename)
-      end
-    end
-  end
-end
+```bash
+$ gem install indonesian-territory-rails
 ```
 
-Open terminal, go to the directory of your project. Then run:
+## Usage
 
-```
-rake db:seed:provinces
-rake db:seed:regencies
-rake db:seed:districts
-rake db:seed:villages
+Copy for migration
+```bash
+rails g indonesian_territory
 ```
 
-Note: Must sequentially
-
-### SQL Import Method
-
-1. Import all sql file from `db/sql/*` to database project.
-2. Run update Date Time:
-
-``` rb
-Object.update_all(created_at: DateTime.now, updated_at: DateTime.now)
+Migration app
+```bash
+rails db:migrate
 ```
 
-Example
+Run seeding data Indonesian Territory use ruby method
+```bash
+rails db:seed:indonesian_territory
+```
 
+Or run seeding data Indonesian Territory use sql method
+```bash
+rails db:seed:indonesian_territory_sql
 ```
-Province.update_all(created_at: DateTime.now, updated_at: DateTime.now)
+
+Override models
+```bash
+rails g indonesian_territory:models
 ```
+
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/SunDi3yansyah/indonesian-territory-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+
+## Code of Conduct
+
+Everyone interacting in the Indonesian::Territory::Rails project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/indonesian-territory-rails/blob/master/CODE_OF_CONDUCT.md).
