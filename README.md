@@ -2,12 +2,12 @@
 
 Indonesian Territory for Rails
 
-[![Build Status](https://travis-ci.com/SunDi3yansyah/indonesian-territory-rails-rb.svg)](https://travis-ci.com/SunDi3yansyah/indonesian-territory-rails-rb)
-[![License](https://img.shields.io/github/license/SunDi3yansyah/indonesian-territory-rails-rb.svg)](LICENSE)
+[![Build Status](https://travis-ci.com/SunDi3yansyah/indonesian-territory-rails.svg)](https://travis-ci.com/SunDi3yansyah/indonesian-territory-rails)
+[![License](https://img.shields.io/github/license/SunDi3yansyah/indonesian-territory-rails.svg)](LICENSE)
 [![Gem Version](https://badge.fury.io/rb/indonesian-territory-rails.svg)](https://badge.fury.io/rb/indonesian-territory-rails)
 [![Download total](https://img.shields.io/gem/dt/indonesian-territory-rails.svg?style=flat)](https://badge.fury.io/rb/indonesian-territory-rails)
-[![GitHub last commit](https://img.shields.io/github/last-commit/SunDi3yansyah/indonesian-territory-rails-rb.svg)](https://github.com/SunDi3yansyah/indonesian-territory-rails-rb/commits/master)
-[![GitHub issues](https://img.shields.io/github/issues/SunDi3yansyah/indonesian-territory-rails-rb.svg)](https://github.com/SunDi3yansyah/indonesian-territory-rails-rb/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/SunDi3yansyah/indonesian-territory-rails.svg)](https://github.com/SunDi3yansyah/indonesian-territory-rails/commits/master)
+[![GitHub issues](https://img.shields.io/github/issues/SunDi3yansyah/indonesian-territory-rails.svg)](https://github.com/SunDi3yansyah/indonesian-territory-rails/issues)
 
 
 ## Installation
