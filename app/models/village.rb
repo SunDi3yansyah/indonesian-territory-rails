@@ -1,3 +1,3 @@
-class Village < ActiveRecord::Base
+class Village < ApplicationRecord
   belongs_to :district, optional: true
 end

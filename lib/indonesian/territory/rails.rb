@@ -18,6 +18,7 @@ module Indonesian
 
         def register_rails_engine
           require "indonesian/territory/rails/engine"
+          require "indonesian/territory/rails/railtie"
         end
       end
     end

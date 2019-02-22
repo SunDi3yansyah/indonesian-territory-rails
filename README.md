@@ -34,7 +34,7 @@ $ gem install indonesian-territory-rails
 
 Copy for migration
 ```bash
-rails g indonesian_territory
+rails g indonesian_territory migrate
 ```
 
 Migration app
@@ -54,7 +54,7 @@ rails db:seed:indonesian_territory_sql
 
 Override models
 ```bash
-rails g indonesian_territory:models
+rails g indonesian_territory models
 ```
 
 
