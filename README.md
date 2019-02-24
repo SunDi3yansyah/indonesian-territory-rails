@@ -42,12 +42,12 @@ Migration database for data Indonesian Territory
 $ rails db:migrate
 ```
 
-Run seeding data Indonesian Territory use ruby method
+Run seeding data Indonesian Territory use ruby method (this takes a very long time)
 ```bash
 $ rails db:seed:indonesian_territory
 ```
 
-Or run seeding data Indonesian Territory use sql method
+Or run seeding data Indonesian Territory use sql method (not not so bad, not as long as the ruby method above)
 ```bash
 $ rails db:seed:indonesian_territory_sql
 ```
