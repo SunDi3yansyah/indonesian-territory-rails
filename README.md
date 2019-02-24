@@ -56,14 +56,15 @@ Run Rails console
 ```bash
 $ rails c
 ```
+
+Enter console to get data from the Province
+```console
+irb(main):001:0> Province.all
+```
+
 Output:
 ```
-Running via Spring preloader in process 9860
-Loading development environment (Rails 5.2.2)
-irb(main):001:0> Province.all
-   (56.4ms)  SET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
-  Province Load (33.0ms)  SELECT  `provinces`.* FROM `provinces` LIMIT 11
-=> #<ActiveRecord::Relation []>
+=> #<ActiveRecord::Relation [#<Province id: 1, name: "ACEH", created_at: "2019-02-24 13:35:17", updated_at: "2019-02-24 13:35:17">, #<Province id: 2, name: "SUMATERA UTARA", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 3, name: "SUMATERA BARAT", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 4, name: "RIAU", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 5, name: "JAMBI", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 6, name: "SUMATERA SELATAN", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 7, name: "BENGKULU", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 8, name: "LAMPUNG", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 9, name: "KEPULAUAN BANGKA BELITUNG", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 10, name: "KEPULAUAN RIAU", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, ...]>
 ```
 
 If you want to modify the model, please overwrite it by entering the generate command below
