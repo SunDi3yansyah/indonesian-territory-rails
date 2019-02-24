@@ -1,4 +1,4 @@
-require "indonesian/territory/rails/version"
+require 'indonesian/territory/rails/version'
 
 module Indonesian
   module Territory
