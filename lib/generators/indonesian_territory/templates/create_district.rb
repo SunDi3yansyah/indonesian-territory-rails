@@ -1,11 +1,11 @@
-MIGRATION_CLASS =
+@migration_class =
   if ActiveRecord::VERSION::MAJOR >= 5
     ActiveRecord::Migration["#{ActiveRecord::VERSION::MAJOR}.#{ActiveRecord::VERSION::MINOR}"]
   else
     ActiveRecord::Migration
   end
 
-class CreateDistrict < MIGRATION_CLASS
+class CreateDistrict < @migration_class
   def change
     create_table :districts do |t|
       t.string :name
