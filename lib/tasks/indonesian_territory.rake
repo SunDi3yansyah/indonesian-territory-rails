@@ -1,6 +1,6 @@
 namespace :db do
   namespace :seed do
-    Dir[Rails.root.join('db', 'seed', '*.rb')].each do |filename|
+    Dir[File.expand_path('../../db/seed/*.rb', __dir__)].each do |filename|
       task_name = File.basename(filename, '.rb')
       desc "Seed: #{task_name}"
       task task_name.to_sym => :environment do
