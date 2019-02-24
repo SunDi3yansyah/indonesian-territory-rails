@@ -32,27 +32,41 @@ $ gem install indonesian-territory-rails
 
 ## Usage
 
-Copy for migration
+Copy for schema migration
 ```bash
-rails g indonesian_territory migrate
+$ rails g indonesian_territory migrate
 ```
 
-Migration app
+Migration database for data Indonesian Territory
 ```bash
-rails db:migrate
+$ rails db:migrate
 ```
 
 Run seeding data Indonesian Territory use ruby method
 ```bash
-rails db:seed:indonesian_territory
+$ rails db:seed:indonesian_territory
 ```
 
 Or run seeding data Indonesian Territory use sql method
 ```bash
-rails db:seed:indonesian_territory_sql
+$ rails db:seed:indonesian_territory_sql
 ```
 
-Override models
+Run Rails console
+``` bash
+$ rails c
+```
+Output:
+```
+Running via Spring preloader in process 9860
+Loading development environment (Rails 5.2.2)
+irb(main):001:0> Province.all
+   (56.4ms)  SET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+  Province Load (33.0ms)  SELECT  `provinces`.* FROM `provinces` LIMIT 11
+=> #<ActiveRecord::Relation []>
+```
+
+If you want to modify the model, please overwrite it by entering the generate command below
 ```bash
 rails g indonesian_territory models
 ```
