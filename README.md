@@ -34,7 +34,7 @@ $ gem install indonesian-territory-rails
 
 Copy for schema migration
 ```bash
-$ rails g indonesian_territory migrate
+$ rails g indonesian_territory:migration install
 ```
 
 Migration database for data Indonesian Territory
@@ -53,7 +53,7 @@ $ rails db:seed:indonesian_territory_sql
 ```
 
 Run Rails console
-``` bash
+```bash
 $ rails c
 ```
 Output:
@@ -68,7 +68,7 @@ irb(main):001:0> Province.all
 
 If you want to modify the model, please overwrite it by entering the generate command below
 ```bash
-rails g indonesian_territory models
+$ rails g indonesian_territory:model
 ```
 
 
