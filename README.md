@@ -32,32 +32,48 @@ $ gem install indonesian-territory-rails
 
 ## Usage
 
-Copy for schema migration
+#### Install Migration
+
+Copy for schema migration:
 ```bash
 $ rails g indonesian_territory:migration install
 ```
 
-Migration database for data Indonesian Territory
+#### Migration
+
+Migration database for data Indonesian Territory:
 ```bash
 $ rails db:migrate
 ```
 
-Run seeding data Indonesian Territory use ruby method (this takes a very long time)
+#### Seed
+
+##### Ruby
+Run seeding data Indonesian Territory use ruby method (this takes a very long time):
 ```bash
-$ rails db:seed:indonesian_territory
+$ rails db:seed:indonesian_territory_ruby
 ```
 
-Or run seeding data Indonesian Territory use sql method (not not so bad, not as long as the ruby method above)
+##### SQL
+Run seeding data Indonesian Territory use sql method (not not so bad, not as long as the ruby method above):
 ```bash
 $ rails db:seed:indonesian_territory_sql
 ```
 
-Run Rails console
+##### CSV
+Run seeding data Indonesian Territory use csv method (not not so bad, not as long as the ruby method above):
+```bash
+$ rails db:seed:indonesian_territory_csv
+```
+
+#### Try Rails Console
+
+Run Rails console:
 ```bash
 $ rails c
 ```
 
-Enter console to get data from the Province
+Enter console to get data from the Province:
 ```console
 irb(main):001:0> Province.all
 ```
@@ -67,7 +83,10 @@ Output:
 => #<ActiveRecord::Relation [#<Province id: 1, name: "ACEH", created_at: "2019-02-24 13:35:17", updated_at: "2019-02-24 13:35:17">, #<Province id: 2, name: "SUMATERA UTARA", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 3, name: "SUMATERA BARAT", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 4, name: "RIAU", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 5, name: "JAMBI", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 6, name: "SUMATERA SELATAN", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 7, name: "BENGKULU", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 8, name: "LAMPUNG", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 9, name: "KEPULAUAN BANGKA BELITUNG", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, #<Province id: 10, name: "KEPULAUAN RIAU", created_at: "2019-02-24 13:35:18", updated_at: "2019-02-24 13:35:18">, ...]>
 ```
 
-If you want to modify the model, please overwrite it by entering the generate command below
+#### Override Class Model
+
+If you want to modify the model, please overwrite it by entering the generate command below:
+
 ```bash
 $ rails g indonesian_territory:model
 ```
