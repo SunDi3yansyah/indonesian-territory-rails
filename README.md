@@ -2,7 +2,7 @@
 
 Indonesian Territory for Rails
 
-[![Build Status](https://travis-ci.com/SunDi3yansyah/indonesian-territory-rails.svg)](https://travis-ci.com/SunDi3yansyah/indonesian-territory-rails)
+[![Build Status](https://travis-ci.org/SunDi3yansyah/indonesian-territory-rails.svg)](https://travis-ci.org/SunDi3yansyah/indonesian-territory-rails)
 [![License](https://img.shields.io/github/license/SunDi3yansyah/indonesian-territory-rails.svg)](LICENSE)
 [![Gem Version](https://badge.fury.io/rb/indonesian-territory-rails.svg)](https://badge.fury.io/rb/indonesian-territory-rails)
 [![Download total](https://img.shields.io/gem/dt/indonesian-territory-rails.svg?style=flat)](https://badge.fury.io/rb/indonesian-territory-rails)
