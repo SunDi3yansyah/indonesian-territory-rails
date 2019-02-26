@@ -1,5 +1,5 @@
 # TODO:
-# - ruby script to import sql
+# - ruby script to import csv
 # - update for timestamp
 #
 #   Province.update_all(created_at: DateTime.now, updated_at: DateTime.now)
